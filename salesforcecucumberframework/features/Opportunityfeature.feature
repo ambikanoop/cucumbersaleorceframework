@@ -1,0 +1,73 @@
+Feature: Opportunity Scenarios
+@opp @test15
+Scenario: opportunities dropdown
+Given user launch the application in "chrome"
+Given user is on "LoginPage"
+Then user waits for element "username"
+Then user enter into the text box "username" "ambika@com.sand"
+Then user enter into the text box "password" "Anoopkp@15"
+Then click on button "Login"
+Given user is on "OpportunityPage"
+Then user waits for element "Opportunitylink"
+Then click on button "Opportunitylink"
+Then click on button "view"
+@opp @test16 
+Scenario: CreatenewOpty
+Given user launch the application in "chrome"
+Given user is on "LoginPage"
+Then user waits for element "username"
+Then user enter into the text box "username" "ambika@com.sand"
+Then user enter into the text box "password" "Anoopkp@15"
+Then click on button "Login"
+Given user is on "OpportunityPage"
+Then user waits for element "Opportunitylink"
+Then click on button "Opportunitylink"
+Then click on button "Newbutton" 
+Then user enter into the text box "OppName" "aa1"
+Then user enter into the text box "AccountName" "ambika"
+Then user enter into the text box "Closedate" "4/17/2024"
+Then select dropdown "stagedropdown" "Qualification"
+Then user enter into the text box "probability" "0"
+Then click on button "primary"
+Then select dropdown "sourcedropdown" "Other"
+Then click on button "save"
+
+@opp @test17
+Scenario: opportunities Pipeline
+Given user launch the application in "chrome"
+Given user is on "LoginPage"
+Then user waits for element "username"
+Then user enter into the text box "username" "ambika@com.sand"
+Then user enter into the text box "password" "Anoopkp@15"
+Then click on button "Login"
+Given user is on "OpportunityPage"
+Then user waits for element "Opportunitylink"
+Then click on button "Opportunitylink"
+Then click on button "OppPipeline"
+@opp @test18
+Scenario: opportunities Stuckopportunity
+Given user launch the application in "chrome"
+Given user is on "LoginPage"
+Then user waits for element "username"
+Then user enter into the text box "username" "ambika@com.sand"
+Then user enter into the text box "password" "Anoopkp@15"
+Then click on button "Login"
+Given user is on "OpportunityPage"
+Then user waits for element "Opportunitylink"
+Then click on button "Opportunitylink"
+Then click on button "StuchOpportunitylink"
+@opp @test19
+Scenario: opportunities Qquarterlylink
+Given user launch the application in "chrome"
+Given user is on "LoginPage"
+Then user waits for element "username"
+Then user enter into the text box "username" "ambika@com.sand"
+Then user enter into the text box "password" "Anoopkp@15"
+Then click on button "Login"
+Given user is on "OpportunityPage"
+Then user waits for element "Opportunitylink"
+Then click on button "Opportunitylink"
+Then select dropdown "Intervals" "Next FQ"
+Then select dropdown "Include" "Open Opportunities"
+Then click on button "RunReport"
+
